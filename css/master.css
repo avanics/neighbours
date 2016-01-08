@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'MuseoSans900';
+    src: url('type/MuseoSans_900-webfont.eot');
+    src: url('type/MuseoSans_900-webfont.eot?#iefix') format('embedded-opentype'),
+    url('type/MuseoSans_900-webfont.woff') format('woff'),
+    url('type/MuseoSans_900-webfont.ttf') format('truetype'),
+    url('type/MuseoSans_900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* html { */
+/* 	/\* background: url(video/background.jpg) no-repeat center center fixed; *\/ */
+/* 	-webkit-background-size: cover; */
+/* 	-moz-background-size: cover; */
+/* 	-o-background-size: cover; */
+/* 	background-size: cover; */
+/* 	background-color: #d8dcb9; */
+/* } */
+
+body {
+    text-align: center;
+    font-family: 'MuseoSans900', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #FFF;
+    text-shadow: 0 1px 2px rgba(0,0,0,.25);
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Layout –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#outer-wrapper {
+    background: transparent url(images/noise.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    position:absolute; top:0; bottom:0; left:0; right:0;
+    margin:auto; height:240px; width:70%;
+}
+
+main h1{
+    font-size: 55px;
+    letter-spacing: -3px;
+}
+
+main .links{
+    color: white;
+    decoration: none;
+}
+
+main a{
+    color: white;
+    text-decoration: none;
+}
+
+main .frame {
+    /* margin: 0px auto; */
+    background-color: gray;
+    opacity: 0.6;
+    display: inline-block;
+    padding: 0 25px;
+    border-radius: 40px;
+}
+
+main #info{
+    font-size: 24px;
+    letter-spacing:1px;
+    margin-bottom: 10px;
+}
+
+main #frame h1 {
+    padding-top: 29px
+}
+
+main #frame p.est {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    clear: both;
+    padding: 0 0 50px 0;
+}
+
+#wrapper {
+    width: 750px;
+    margin: 0 auto;
+}
+
+#me {
+    display: none;
+}
+/* #me {
+   display: none;
+   float: left;
+   width: 375px;
+   height: 50px;
+   text-align: left;
+   }
+
+#me h2 {
+font-family: 'MuseoSans900', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 25px;
+letter-spacing: -0.05em;
+line-height: 25px;
+}
+
+#me h3 {
+text-transform: uppercase;
+font-size: 10px;
+font-weight: normal;
+letter-spacing: 2px;
+} */
+
+#social {
+    width: 320px;
+    margin: 0 auto;
+}
+
+
+/* Icons –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#social ul li {
+    display:  inline-block;
+}
+
+#social ul li a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: transparent url('/icons.png') no-repeat;
+    text-indent: -9999px;
+    margin: 0 5px;
+}
+
+#social li a.github {
+    background-position: -50px 0;
+}
+#social li a.github:hover {
+    background-position: -50px -50px;
+}
+
+#social li a.dribbble {
+    background-position: -100px 0;
+}
+#social li a.dribbble:hover {
+    background-position: -100px -50px;
+}
+
+#social li a.instagram {
+    background-position: -150px 0;
+}
+#social li a.instagram:hover {
+    background-position: -150px -50px;
+}
+
+#social li a.linkedin {
+    background-position: -200px 0;
+}
+#social li a.linkedin:hover {
+    background-position: -200px -50px;
+}
+
+#social li a.email {
+    background-position: -250px 0;
+}
+#social li a.email:hover {
+    background-position: -250px -50px;
+}
+
+#social ul li a:hover {
+    background-position: 0 -50px;
+}
+
+/* Video –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.video-background video {
+    min-height: 100%; 
+    min-width:100%; 
+}
+
+
+/**** general text styling - registration page start****/
+#wrapper h1{
+	font-size: 48px;
+	color: rgb(6, 106, 117);
+	padding: 2px 0 10px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+/** For the moment only webkit supports the background-clip:text; */
+#wrapper h1{
+	background: 
+	-webkit-repeating-linear-gradient(-45deg, 
+		rgb(18, 83, 93) , 
+		rgb(18, 83, 93) 20px,
+		rgb(64, 111, 118) 20px,
+		rgb(64, 111, 118) 40px,
+		rgb(18, 83, 93) 40px);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+#wrapper h1:after{
+	content:' ';
+	display:block;
+	width:100%;
+	height:2px;
+	margin-top:10px;
+	background: 
+		linear-gradient(left,  
+			rgba(147,184,189,0) 0%,
+			rgba(147,184,189,0.8) 20%,
+			rgba(147,184,189,1) 53%,
+			rgba(147,184,189,0.8) 79%,
+			rgba(147,184,189,0) 100%); 
+}
+#subscribe, 
+#login{
+	position: absolute;
+	top: 0px;
+	width: 88%;	
+	padding: 18px 6% 60px 6%;
+	margin: 0 0 35px 0;
+	background: rgb(247, 247, 247);
+	border: 1px solid rgba(147, 184, 189,0.8);
+	box-shadow:	
+		0pt 2px 5px rgba(105, 108, 109,  0.7),	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	border-radius: 5px;
+}
+#login{
+	z-index: 22;
+}
+/**** general text styling - registration page end****/
+
+/**** Login at index page start****/
+.modal-dialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 99999;
+    opacity:0;
+    color: black;
+    -webkit-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+    pointer-events: none;
+}
+
+.modal-dialog.show{
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modal-dialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modal-dialog div {
+    width: 230px;
+    position: relative;
+    margin: 10% auto;
+    padding: 16px 20px 21px 20px;
+    border-radius: 4px;
+    background: #fff;
+    border: 2px white solid;
+}
+
+.modal-dialog p {
+    color: black;
+    text-shadow: none;
+    text-transform: none;
+    font-size: 14px;
+}
+.close {
+    background: black;
+    color: white;
+    line-height: 24px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 26px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #666;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #aaa; }
+/**************************** Login at index page end************************/
+
